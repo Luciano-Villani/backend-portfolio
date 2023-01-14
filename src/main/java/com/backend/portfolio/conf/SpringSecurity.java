@@ -28,10 +28,11 @@ public class SpringSecurity {
                 //.antMatchers("/actualizar/**").permitAll()
                 .antMatchers("/delete/**").permitAll()
                 .antMatchers("/ver/**").permitAll()
+                .antMatchers("/actualizar/**").permitAll()
                 
                 .antMatchers("/user/**").hasAnyRole("USER", "ADMIN")
                 .antMatchers("/admin/**").hasAnyRole("ADMIN")
-                .antMatchers("/actualizar/**").hasAnyRole("USER","ADMIN")
+                //.antMatchers("/actualizar/**").hasAnyRole("USER","ADMIN")
                 //.antMatchers("/informacion/delete/**").hasAnyRole("USER","ADMIN")
                 //.antMatchers("/new/**").hasAnyRole("USER","ADMIN")
                 //.antMatchers("/delete/**").hasAnyRole("USER","ADMIN")
